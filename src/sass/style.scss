@@ -7,14 +7,12 @@
   max-width: 950px;
   margin: 0 auto;
 }
+@import 'blocks/titles';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
-
-@media screen and (max-width: 991px) {
-
-}
+@import 'blocks/consultation';
 
 @media screen and (max-width: 991px) {
   .container {
