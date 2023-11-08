@@ -1,0 +1,43 @@
+.carousel {
+  padding: 80px 0 82px 0;
+  height: 695px;
+  -webkit-overflow-scrolling: touch;
+  &__inner {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    margin: 0 auto;
+    &__item {
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.5s ease
+    }
+    &__item.active {
+      opacity: 1;
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      border: none;
+      width: 45px;
+      height: 50px;
+      background: url('../icons/arrow-right-solid (1).svg') center (center/cover) no-repeat;
+      &.prev {
+        background: url('../icons/arrow-left-solid.svg') center (center/cover) no-repeat
+      }
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+  }
+}

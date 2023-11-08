@@ -13,6 +13,12 @@
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/feedBack';
+@import 'blocks/footer';
+@import 'blocks/modal';
 
 @media screen and (max-width: 991px) {
   .container {
@@ -22,6 +28,24 @@
     padding: 50px 0 50px 0;
     &__items {
       max-width: 720px;
+    }
+  }
+
+  .catalog {
+    padding-bottom: 40px;
+  }
+
+  .feedBack {
+    &__item {
+      margin-top: 40px;
+      img {
+        margin-right: 40px;
+        max-width: 20%;
+        height: 20%;
+      }
+      &__descr {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -59,6 +83,47 @@
     }
     &_item {
       margin-top: 20px;
+    }
+  }
+  .consultation {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    min-height: 480px;
+    padding: 60px 0 40px 0;
+    .title_left {
+      text-align: center;
+      font-size: 31px;
+    }
+    &__descr {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .feed-form {
+      width: 260px;
+    }
+  }
+  .carousel {
+    padding: 60px 0 62px 0;
+    height: 605px;
+    &__inner {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  .catalog {
+    &__tabs {
+      margin-top: 50px;
+    }
+    &__tab {
+      width: 156px;
+      height: 50px;
+      font-size: 16px;
+    }
+    &__content {
+      justify-content: center;
     }
   }
 }

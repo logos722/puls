@@ -1,0 +1,35 @@
+.feedBack {
+  height: 1000px;
+  padding: 38px 0 49px 0;
+  &__items {
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    margin-top: 60px;
+    display: flex;
+    img {
+      margin-right: 62px;
+      max-width: 30%;
+      height: 30%;
+    }
+    &__name {
+      color: #0D0D0D;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &__count {
+      color: #646464;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &__descr {
+      margin-top: 10px;
+      color: #0D0D0D;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+  }
+}
